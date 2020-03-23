@@ -12,7 +12,7 @@ docker run vouchio/datomic-cli-tools <args>
 **Example: start the datomic socks proxy**
 
 ```bash
-docker run vouchio/datomic-cli-tools client access <system>
+docker run -p 8182:8182 vouchio/datomic-cli-tools client access <system>
 ```
 
 Specify AWS region and credentials:
