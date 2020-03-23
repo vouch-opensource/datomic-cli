@@ -15,5 +15,8 @@ RUN rm -rf /tmp/download
 RUN datomic || true
 
 RUN mkdir -p /root/.ssh
+COPY ssh-config /root/.ssh/config
+
+EXPOSE 8182
 
 ENTRYPOINT ["datomic"]
